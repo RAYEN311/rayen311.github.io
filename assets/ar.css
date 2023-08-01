@@ -1,0 +1,153 @@
+:root{
+  --primary-color : rgb(255, 255, 255) ;
+  --primary-background : rgb(25, 25, 42) ;
+}
+
+html{
+overflow-x: hidden;
+  margin: 0;
+  /* padding: 8px; */
+  width: 100vw;
+  background-color: var(--primary-background);
+}
+body{
+margin: 0;
+margin-top: 0;
+padding-top: 0;
+padding: 10px;
+width: calc(100vw - 20px);
+
+}
+
+*{
+  color :var(--primary-color);
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+header{
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 3vh 1vw 4vh 0vh;
+top: 0;
+position: fixed;
+width: 95vw;
+transition: none;
+background-color: var(--primary-background);
+}
+h1{
+margin:0;
+margin-right: 2vh;
+}
+.info{
+margin-top: 20vh;
+margin-left: 5vw;
+display: flex ;
+flex-direction: row;
+padding: 10px;
+padding-top: 0;
+position: fixed;
+}
+.sub-img{
+width: 300px;
+margin-right: 50px;
+}
+.sub-img img{
+width: 18vw;
+ object-fit: cover;
+ border-radius: 2px;
+}
+.center{
+display: flex;
+align-items: center;
+/* justify-content: center; */
+flex-direction: column;
+}
+
+.align-center{
+  text-transform: capitalize;
+}
+h2{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.mailto:hover{
+  scale: 1.2;
+}
+.main{
+position: absolute;
+top: 17vh;
+background-color: #a9a9a9;
+height: 100vh;
+width: 55vw;
+left: 10vw;
+z-index: -1;
+}
+
+  @media (max-width : 1000px) {
+    .info{
+      margin-top: 2vh;
+      flex-direction: column;
+      position: relative;
+    }
+      .sub-img{
+        margin: auto;
+      }
+      .sub-img img{
+        width: 90vw;
+      }
+      .info{
+        position: relative;
+        margin: 0;
+      }
+      .text_c{
+        margin-top: 20px;
+        text-align: center;
+      }
+      header{
+        position: relative;
+        width: auto;
+      }
+      .main{
+        display: none;
+      }
+    }
+
+    
+.gradient-border {
+  --border-width: 1px;
+
+  border-radius: var(--border-width);
+
+  &::after {
+    content: "";
+    position: fixed;
+    transform: translate(18.5vw,-0.5vw);
+    z-index: -1;
+    width: 19vw;
+    height: 21.9vw;
+    transition: none;
+    background: linear-gradient(
+      60deg,
+      hsl(224, 90%, 50%),
+      hsl(269, 81%, 51%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
