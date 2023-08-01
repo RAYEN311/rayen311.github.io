@@ -10,7 +10,7 @@ window.location = "../ar/index.html"
 }
 else if(selector.value == 1){
     console.log(selector.value)   
-    window.location = "../en/index.html"
+    window.location = "../index.html"
 
 }
 else if(selector.value == 2){
