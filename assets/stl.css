@@ -26,7 +26,7 @@ body{
     color :var(--primary-color);
     font-family: monospace;
     text-transform: capitalize;
-    transition: all 0.35s;
+    transition: all 0.2s;
 }
 
 header{
