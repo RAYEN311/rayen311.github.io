@@ -42,4 +42,52 @@ clic.addEventListener("change",()=>{
     rayen_color_doc_changing_state = 0 ;
   }
 })
-
+const main = document.getElementById('main')
+const vid = document.getElementById('vid')
+const home = document.getElementById('home')       
+const career = document.getElementById('career')       
+const projs = document.getElementById('projects')       
+const direct = document.getElementById('direct')       
+const homebtn = document.getElementById('homebtn')       
+const careerbtn = document.getElementById('careerbtn')       
+const projsbtn = document.getElementById('projectsbtn')       
+const directbtn = document.getElementById('directbtn')       
+vid.addEventListener('click', ()=>{
+  vid.style.display = "none";
+  home.style.display = "block"
+  homebtn.style.color = "white"
+  homebtn.style.backgroundColor = "green"
+  main.style.backgroundColor = 'white'
+})
+function diabls(v0,v1,v2 ,v3 ,v4 , v5,v6,v7,v8){
+v0.style.color = "white"
+v0.style.backgroundColor = "green"
+v1.style.display = "block";
+v2.style.display = "none";
+v3.style.display = "none";
+v4.style.display = "none";
+v5.style.display = "none";
+main.style.backgroundColor = 'white'
+document.getElementById('prg').style.width = "0%"
+setTimeout(()=>{
+  document.getElementById('prg').style.width = "100%"
+},1000)
+v6.style.color = "rgb(0, 174, 255)"
+v6.style.backgroundColor = "#00003e"
+v7.style.color = "rgb(0, 174, 255)"
+v7.style.backgroundColor = "#00003e"
+v8.style.color = "rgb(0, 174, 255)"
+v8.style.backgroundColor = "#00003e"
+}
+homebtn.addEventListener('click', ()=>{
+diabls(homebtn,home , career , projs , direct , vid , careerbtn, projsbtn ,directbtn)
+})
+careerbtn.addEventListener('click', ()=>{
+diabls(careerbtn,career , home , projs , direct, vid, homebtn, projsbtn ,directbtn)
+})
+projsbtn.addEventListener('click', ()=>{
+diabls(projsbtn ,projs , career , home , direct, vid ,homebtn, careerbtn ,directbtn)
+})
+directbtn.addEventListener('click', ()=>{
+diabls(directbtn , direct , career , projs , home, vid ,homebtn, projsbtn ,careerbtn)
+})

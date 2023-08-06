@@ -5,17 +5,31 @@
 .contact-link{
     color : var(--contact-link) ;
 }
+h2{
+  font-weight: 700;
+}
 .mini-dis{
     color:var(--mini-dis);
 }
+.gradient-border{
+  /* box-shadow: 0 0 5px 3px grey; */
+}
 .main{
     background-color: rgb(0, 0, 0);
+    box-shadow: 0 6px 5px 3px grey;
 }
-
+.prg{
+  width: 0;
+}
 .main:hover{
     background-color: #ffffff;
 }
-
+.main:hover .prg{
+width: 100%;
+}
+/* .main:hover video{
+  display: none;
+} */
 
 @media (max-width : 1000px) {
     .gradient-border::after {
@@ -174,15 +188,19 @@
   /* border-radius: 0 0 20px 20px; */
 }
 .nav span{
-  color: rgb(43, 160, 255);
+  color: rgb(0, 174, 255);
   cursor: pointer;
   padding: 5px;
   width: 70px;
   text-align: center;
   transition: color none;
   border-radius: 10px;
+  background-color: #00003e;
 }
 .nav span:hover{
   background-color: rgb(0, 5, 25);
   color: white;
+}
+.hid{
+  display: none;
 }
