@@ -43,6 +43,40 @@ h1{
   margin-left: 3vh;
   color: var(--second-color)
 }
+.cards{
+  position: absolute;
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  right: 0px;
+  top: calc(50vh - 120px);
+  transform: translateX(110px);
+}
+.cards .card{
+  height: 70px;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(25, 25, 42);
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 135;
+  text-decoration: none;
+  font-size: larger;
+  fill: white;
+  transition: fill none;
+}
+.cards .card:hover{
+   transform: translate(-90px);
+   /* background-color: white;
+   color:  black; */
+   border: 1px solid var(--primary-color);
+}
 .info{
   margin-top: 20vh;
   margin-left: 5vw;
@@ -84,8 +118,8 @@ h1{
 .main{
   position: absolute;
 background-color: #a9a9a9;
-width: 60vw;
-right: 5vw;
+width: 57vw;
+right: 11.5vw;
 top: 17vh;
 z-index: -1;
 color: black;
@@ -94,6 +128,9 @@ color: black;
 
 
     @media (max-width : 1000px) {
+      .cards{
+        display:none;
+      }
       .info{
         margin-top: 2vh;
         flex-direction: column;
