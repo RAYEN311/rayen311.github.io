@@ -203,4 +203,19 @@ width: 100%;
 }
 .hid{
   display: none;
+  padding: 10px 20px;
+}
+.hid{
+  color: black !important;
+  min-height:50vh;
+}
+.hid h3{
+  color: black;
+  font-weight: 400;
+}
+.hid h4 ,.hid ul li{
+  color :rgb(20,20,20)
+}
+.bluesky{
+  color:rgb(0, 119, 255);
 }
