@@ -44,7 +44,7 @@ h1{
   color: var(--second-color)
 }
 .cards{
-  position: absolute;
+  position: fixed;
   height:400px;
   display: flex;
   flex-direction: column;

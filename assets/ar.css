@@ -79,8 +79,8 @@ h2{
 position: absolute;
 top: 17vh;
 background-color: #a9a9a9;
-width:60vw;
-left: 10vw;
+width:57vw;
+left: 15vw;
 z-index: -1;
 transform: translateX(-5vw);
 }
