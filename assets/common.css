@@ -219,3 +219,41 @@ width: 100%;
 .bluesky{
   color:rgb(0, 119, 255);
 }
+.dub_pfe_cont{
+  height: 140px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.pfe_el{
+  border: 1px solid white;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+}
+.hd-tit{
+  position: absolute;
+  transform: translateY(50px);
+  width: 50%;
+  text-align: center;
+  font-size: 1.5vw;
+}
+#projects .labeltit{
+  width: 100%;
+  height:60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(32, 32, 255);
+}
+
+.hvcol-gol:hover{
+  background:linear-gradient( rgb(141, 120, 0) , grey);
+}
+.hvcol-bl:hover{
+  background:linear-gradient( rgb(0, 49, 141) , grey);
+}
+.hvcol-red:hover{
+  background:linear-gradient( rgb(167, 19, 0) , grey);
+}
