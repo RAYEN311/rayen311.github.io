@@ -271,6 +271,9 @@ width: 100%;
 .pfe_el .mx-2{
   transform: translate(50px,12px);
 }
+.pfe_el .mx-3{
+  transform: translate(90px,12px);
+}
 
 .pfe_el:hover .hd-tit{
   transform: translateY(24px);
