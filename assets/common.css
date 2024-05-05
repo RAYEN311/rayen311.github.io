@@ -232,6 +232,18 @@ width: 100%;
   width: 50%;
   border-radius: 3px;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+.pfe_el .filter{
+  position: absolute;
+  height: 140px;
+  width: calc(calc(50%) - 20px);
+  background-color: #000000a4;
+  filter: blur(0.8);
+}
+.pfe_el:hover .filter{
+  background-color: #00000044;
 }
 .hd-tit{
   position: absolute;
@@ -240,6 +252,7 @@ width: 100%;
   width: 50%;
   text-align: center;
   font-size: 1.3vw;
+  z-index: 1000;
 }
 #projects .labeltit{
   width: 100%;
@@ -299,6 +312,10 @@ width: 100%;
   display: none;
   transform: translate(0px, 0px);
 }
+.pfe_el:hover{
+  background-size:cover;
+  background-position: center;
+}
 .pfe_el:hover .atr-lnk{
   display: flex;
   flex-direction: row;
@@ -311,13 +328,21 @@ width: 100%;
   scale: 0.95;
 }
 
-
+.hvcol-gol{
+  transition: all 0.5 ease-in-out;
+}
 .hvcol-gol:hover{
   background:linear-gradient( rgb(141, 120, 0) , grey);
+  background-position: center;
+  background-size: cover;
 }
 .hvcol-bl:hover{
   background:linear-gradient( rgb(0, 49, 141) , grey);
+  background-position: center;
+  background-size: cover;
 }
 .hvcol-red:hover{
   background:linear-gradient( rgb(167, 19, 0) , grey);
+  background-position: center;
+  background-size: cover;
 }
