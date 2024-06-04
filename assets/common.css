@@ -219,14 +219,21 @@ width: 100%;
 .bluesky{
   color:rgb(0, 119, 255);
 }
-.dub_pfe_cont{
+.dub_cont{
   height: 140px;
   width: 100%;
   background-color: black;
   display: flex;
   flex-direction: row;
 }
-.pfe_el{
+.single_cont{
+  height: 140px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.el{
   border: 1px solid white;
   height: 100%;
   width: 50%;
@@ -235,14 +242,20 @@ width: 100%;
   background-size: cover;
   background-position: center;
 }
-.pfe_el .filter{
+.sel{
+  width: 100%;
+}
+.el .filter , .sel .filter{
   position: absolute;
   height: 140px;
   width: calc(calc(50%) - 20px);
   background-color: #000000a4;
   filter: blur(0.8);
 }
-.pfe_el:hover .filter{
+.sel .filter{
+  width: calc(calc(100%) - 40px);
+}
+.el:hover .filter , .sel:hover .filter{
   background-color: #00000044;
 }
 .hd-tit{
@@ -264,31 +277,30 @@ width: 100%;
   border: 1px solid white;
   background-color: var(--primary-background);
 }
-.pfe_el .log-el{
+.el .log-el , .sel .log-el{
   position: absolute;
-  height: 27px;
+  height: 30px;
   background-color: #0f0f0f;
-  padding: 3px;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0px 0px 10px 1px rgb(102, 102, 102);
   filter: contrast(3);
 }
-.pfe_el .mx0{
+.el .mx0 , .sel .mx0{
   transform: translate(24.2vw,12px);
   
 }
-.pfe_el .mx-1{
+.el .mx-1 , .sel .mx-1{
   transform: translate(10px,12px);
 }
-.pfe_el .mx-2{
+.el .mx-2 , .sel .mx-2 {
   transform: translate(50px,12px);
 }
-.pfe_el .mx-3{
+.el .mx-3 , .sel .mx-3 {
   transform: translate(90px,12px);
 }
 
-.pfe_el:hover .hd-tit{
+.el:hover .hd-tit , .sel:hover .hd-tit{
   transform: translateY(24px);
   font-size: 1.4vw;
 }
@@ -305,18 +317,18 @@ width: 100%;
   filter: contrast(3);
 }
 
-.pfe_el .atr-lnk{
+.el .atr-lnk , .sel .atr-lnk{
   position: absolute;
   width: 80px;
   height: 30px;
   display: none;
   transform: translate(0px, 0px);
 }
-.pfe_el:hover{
+.sel:hover , .el:hover{
   background-size:cover;
   background-position: center;
 }
-.pfe_el:hover .atr-lnk{
+.el:hover .atr-lnk , .sel:hover .atr-lnk{
   display: flex;
   flex-direction: row;
   transform: translate(13vw, 60px);
