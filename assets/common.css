@@ -16,7 +16,7 @@ h2{
 }
 
 .gradient-border img{
-  transform: translateY(50px);
+  transform: translateY(15px);
 }
 .main{
     background-color: rgb(0, 0, 0);
